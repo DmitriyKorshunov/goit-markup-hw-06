@@ -54,7 +54,7 @@ img {
   margin-right: auto;
   width: 1200px;
   padding: 0 15px;
-  /*outline: 1px solid red;*/
+  outline: 1px solid red;
 }
 
 .title {
@@ -958,14 +958,60 @@ img {
   flex-direction: column;
 }
 
+.input {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-icon {
+  position: absolute;
+  top: 52%;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-left: 18px;
+}
+
+.modal-text {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  padding-left: 30px;
+}
+
+.modal-label {
+  margin-bottom: 20px;
+}
+
 .textarea {
-  width: 448px;
+  width: 100%;
   height: 120px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
 
   border-radius: 4px;
   resize: none;
+}
+
+.textarea:placeholder-shown {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-btn {
