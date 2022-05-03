@@ -349,14 +349,20 @@
             </li>
           </ul>
         </div>
-        <forma class="footer-subscribe">
-          <h2 class="footer-title-subscride">Подпишитесь на рассылку</h2>
+        <div
+          class="footer-subscribe"
+          role="group"
+          aria-labelledby="footer-title-subscride"
+        >
+          <h2 class="footer-title-subscride" id="footer-title-subscride">
+            Подпишитесь на рассылку
+          </h2>
           <label class="footer-email">
-            <input type="email" name="email" class="footer-input" />
+            <input type="email" name="email" class="footer-input" required />
             <span class="footer-text-email">E-mail</span>
           </label>
           <button type="submit" class="btn-subscribe list">Подписаться</button>
-        </forma>
+        </div>
       </div>
     </footer>
   </body>
