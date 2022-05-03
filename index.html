@@ -449,8 +449,9 @@
     <!--modal window-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="button-modal" data-modal-close></button>
         <p class="modal-titel">Оставьте свои данные, мы вам перезвоним</p>
+        <button type="button" class="button-modal" data-modal-close></button>
+
         <form class="modal-field">
           <label class="input">
             <span class="modal-text">Имя</span>
@@ -503,19 +504,20 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <div>
-            <label class="modal-checkbox">
-              <input type="checkbox" name="hobby" value="reading" />
-              <span class="modal-checkbox-text"
-                >Соглашаюсь с рассылкой и принимаю <a>Условия договора</a></span
-              >
-            </label>
-          </div>
-
-          <button type="submit" class="modal-btn list">
-            <span class="modal-btn-text">Отправить</span>
-          </button>
         </form>
+        <div class="modal-checkbox">
+          <label class="">
+            <input type="checkbox" name="hobby" value="reading" />
+            <span class="modal-checkbox-text">
+              Соглашаюсь с рассылкой и принимаю
+            </span>
+            <span>Условия договора</span>
+          </label>
+        </div>
+
+        <button type="submit" class="modal-btn list">
+          <span class="modal-btn-text">Отправить</span>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
