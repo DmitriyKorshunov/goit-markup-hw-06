@@ -965,7 +965,8 @@ img {
 }
 
 .input {
-  display: block;
+  position: relative;
+
   height: 58px;
   margin-bottom: 10px;
 }
@@ -978,13 +979,10 @@ img {
   color: var(--primary-text-color);
 }
 
-.modal-input-icon {
-  position: relative;
-}
-
 .modal-input {
   width: 100%;
-  height: 40px;
+  margin: 0;
+  padding: 10px 20px;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -994,20 +992,21 @@ img {
   transition: border 250ms var(--timing-function);
 }
 
-.modal-input:focus {
-  border: 1px solid #2196f3;
-}
-
 .input-icon {
   position: absolute;
-  top: 50%;
+  top: 70%;
+  left: 18px;
   transform: translateY(-50%);
-  display: block;
+  display: inline-block;
   width: 18px;
   height: 18px;
-  margin-left: 18px;
+
   fill: #212121;
   transition: fill 250ms var(--timing-function);
+}
+
+.modal-input:focus {
+  border: 1px solid #2196f3;
 }
 
 .modal-input:focus ~ .input-icon {
