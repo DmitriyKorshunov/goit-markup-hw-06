@@ -449,51 +449,57 @@
     <!--modal window-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p class="modal-titel">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal-titel list">Оставьте свои данные, мы вам перезвоним</p>
         <button type="button" class="button-modal" data-modal-close></button>
 
         <form class="modal-field">
           <label class="input">
             <span class="modal-text">Имя</span>
-            <input
-              type="text"
-              name="user-name"
-              class="modal-input"
-              required
-              title="Иван Иванович"
-              minlength="2"
-            />
-            <span class="input-icon"
-              ><svg width="18" height="18">
-                <use href="./img/icons.svg#personblack"></use></svg
-            ></span>
+            <div class="modal-input-icon">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                required
+                title="Иван Иванович"
+                minlength="2"
+              />
+              <span class="input-icon"
+                ><svg width="18" height="18">
+                  <use href="./img/icons.svg#personblack"></use></svg
+              ></span>
+            </div>
           </label>
           <label class="input"
             ><span class="modal-text">Телефон</span>
-            <input
-              type="tel"
-              name="user-phone"
-              class="modal-input"
-              required
-              title="+38 (098) 111-11-11"
-            />
-            <span class="input-icon"
-              ><svg width="18" height="18">
-                <use href="./img/icons.svg#phoneblack"></use></svg
-            ></span>
+            <div class="modal-input-icon">
+              <input
+                type="tel"
+                name="user-phone"
+                class="modal-input"
+                required
+                title="+38 (098) 111-11-11"
+              />
+              <span class="input-icon"
+                ><svg width="18" height="18">
+                  <use href="./img/icons.svg#phoneblack"></use></svg
+              ></span>
+            </div>
           </label>
           <label class="input"
             ><span class="modal-text">Почта</span>
-            <input
-              type="email"
-              name="user-email"
-              class="modal-input"
-              title="name@mail.com"
-            />
-            <span class="input-icon"
-              ><svg width="18" height="18">
-                <use href="./img/icons.svg#emailblack"></use></svg
-            ></span>
+            <div class="modal-input-icon">
+              <input
+                type="email"
+                name="user-email"
+                class="modal-input"
+                title="name@mail.com"
+              />
+              <span class="input-icon"
+                ><svg width="18" height="18">
+                  <use href="./img/icons.svg#emailblack"></use></svg
+              ></span>
+            </div>
           </label>
 
           <label class="modal-label"
@@ -511,7 +517,7 @@
             <span class="modal-checkbox-text">
               Соглашаюсь с рассылкой и принимаю
             </span>
-            <span>Условия договора</span>
+            <span class="checkbox-text">Условия договора</span>
           </label>
         </div>
 
