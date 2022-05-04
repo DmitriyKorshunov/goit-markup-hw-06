@@ -479,10 +479,9 @@
                 required
                 title="+38 (098) 111-11-11"
               />
-              <span class="input-icon"
-                ><svg width="18" height="18">
-                  <use href="./img/icons.svg#phoneblack"></use></svg
-              ></span>
+              <svg width="18" height="18" class="input-icon">
+                <use href="./img/icons.svg#phoneblack"></use>
+              </svg>
             </div>
           </label>
           <label class="input"
@@ -494,10 +493,9 @@
                 class="modal-input"
                 title="name@mail.com"
               />
-              <span class="input-icon"
-                ><svg width="18" height="18">
-                  <use href="./img/icons.svg#emailblack"></use></svg
-              ></span>
+              <svg width="18" height="18" class="input-icon">
+                <use href="./img/icons.svg#emailblack"></use>
+              </svg>
             </div>
           </label>
 
@@ -510,15 +508,23 @@
             ></textarea>
           </label>
         </form>
-        <div class="modal-checkbox">
-          <label class="">
-            <input type="checkbox" name="hobby" value="reading" />
-            <span class="modal-checkbox-text">
-              Соглашаюсь с рассылкой и принимаю
-            </span>
-            <span class="checkbox-text">Условия договора</span>
-          </label>
-        </div>
+
+        <label class="modal-checkbox">
+          <input
+            type="checkbox"
+            name="hobby"
+            value="reading"
+            class="checkbox"
+          />
+          <span class="checkbox-icon">
+            <svg width="16" height="15">
+              <use href="./img/icons.svg#iconcheck"></use>
+            </svg>
+          </span>
+          <span class="modal-checkbox-text">
+            Соглашаюсь с рассылкой и принимаю </span
+          ><span class="checkbox-text">Условия договора</span>
+        </label>
 
         <button type="submit" class="modal-btn list">
           <span class="modal-btn-text">Отправить</span>
