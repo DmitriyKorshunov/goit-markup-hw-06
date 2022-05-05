@@ -1062,22 +1062,25 @@ img {
 .checkbox-icon {
   display: flex;
   align-items: center;
+
   width: 16px;
   height: 15px;
-  fill-opacity: 0;
-  fill: #ffffff;
+  margin-right: 6px;
+
+  fill: transparent;
   border: 3px solid #212121;
   border-radius: 4px;
   background-color: #ffffff;
+
   transition: background-color 250ms var(--timing-function),
-    fill-opacity 250ms var(--timing-function);
+    fill 250ms var(--timing-function);
 }
 
 .checkbox:checked + .checkbox-icon {
   background-color: #2196f3;
   border: none;
 
-  fill-opacity: 1;
+  fill: var(--background-primary-color);
 }
 
 .modal-checkbox-text {
