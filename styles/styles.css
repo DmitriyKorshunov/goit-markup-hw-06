@@ -889,10 +889,10 @@ img {
   transition: opacity 250ms var(--timing-function);
 }
 
-.backdrop.is-hidden {
+/*.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-}
+}*/
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
@@ -979,6 +979,10 @@ img {
   color: var(--primary-text-color);
 }
 
+.modal-input-icon {
+  position: relative;
+}
+
 .modal-input {
   width: 100%;
   margin: 0;
@@ -994,7 +998,7 @@ img {
 
 .input-icon {
   position: absolute;
-  top: 75%;
+  top: 50%;
   left: 18px;
   transform: translateY(-50%);
   display: inline-block;
