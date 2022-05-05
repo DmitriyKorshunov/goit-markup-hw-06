@@ -791,10 +791,11 @@ img {
 
   width: 570px;
   height: 86px;
-  padding-top: 12px;
+  margin-top: 12px;
 }
 
 .footer-title-subscride {
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
